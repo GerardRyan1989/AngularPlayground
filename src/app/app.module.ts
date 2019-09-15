@@ -6,17 +6,32 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatToolbarModule } from '@angular/material';
 import {MatTabsModule} from '@angular/material';
+import { HomeComponent } from './home/home.component';
+import { FormsModule } from '@angular/forms';
+import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
+import { MatIconModule } from '@angular/material/icon';
+import { NgxMatIntlTelInputModule } from 'ngx-mat-intl-tel-input';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
-    MatTabsModule
+    MatTabsModule,
+    FormsModule,
+    MatInputModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule,
+    MatIconModule,
+    NgxMatIntlTelInputModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent],
