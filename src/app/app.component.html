@@ -1,13 +1,12 @@
-<div>
-  <nav>
-    <a>Navigation:</a>
-    <ul>
-      <li><a [router-link]="['home']">Home</a></li>
-      <li><a [router-link]="['login']">Login</a></li>
-      <li><a [router-link]="['dashboard']">Dashboard</a></li>
-    </ul>
-  </nav>
 
+  <mat-toolbar class="app-toolbar">
+        <span class="centre"><h1>{{title}}</h1></span>
+  </mat-toolbar>
+    <nav mat-tab-nav-bar>
+        <a mat-tab-link>Home</a>
+        <a mat-tab-link>Hello</a>
+        <a mat-tab-link>Gallery</a>
+        <a mat-tab-link>About Us</a>
+    </nav>
 
-
-<router-outlet></router-outlet>
+    <router-outlet></router-outlet>
