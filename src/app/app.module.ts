@@ -10,7 +10,7 @@ import { HomeComponent } from './home/home.component';
 import { FormsModule } from '@angular/forms';
 import { MatInputModule, MatTableModule, MatPaginatorModule, MatSortModule } from '@angular/material';
 import { MatIconModule } from '@angular/material/icon';
-import { NgxMatIntlTelInputModule } from 'ngx-mat-intl-tel-input';
+import { MatIntlTelInputModule } from 'mat-intl-tel-input/';
 import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
@@ -30,7 +30,7 @@ import {MatCardModule} from '@angular/material/card';
     MatPaginatorModule,
     MatSortModule,
     MatIconModule,
-    NgxMatIntlTelInputModule,
+    MatIntlTelInputModule,
     MatCardModule
   ],
   providers: [],
