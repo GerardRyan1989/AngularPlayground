@@ -3,12 +3,10 @@
         <span class="centre"><h1>{{title}}</h1></span>
   </mat-toolbar>
     <nav mat-tab-nav-bar mat-stretch-tabs>
-        <a mat-tab-link [routerLink]="home">Home</a>
-        <a mat-tab-link>Hello</a>
-        <a mat-tab-link>Gallery</a>
-        <a mat-tab-link>About Us</a>
+        <a mat-tab-link routerLink="home">Home</a>
+        <a mat-tab-link routerLink="">Hello</a>
+        <a mat-tab-link routerLink="gallery">Gallery</a>
+        <a mat-tab-link routerLink="login-register">login-register</a>
     </nav>
 
     <router-outlet></router-outlet>
-
-    <mat-intl-tel-input></mat-intl-tel-input>
